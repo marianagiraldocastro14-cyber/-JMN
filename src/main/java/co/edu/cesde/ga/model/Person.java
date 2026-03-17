@@ -1,6 +1,6 @@
 package co.edu.cesde.ga.model;
 
-public class Person {
+public abstract class Person {
 
     Long userId;
     String code;
@@ -9,7 +9,7 @@ public class Person {
     String lastName;
     String status;
 
-    public Person(Long userId, String code, String documentNumber, String firstName, String lastName, String status) {
+    protected Person(Long userId, String code, String documentNumber, String firstName, String lastName, String status) {
         this.userId = userId;
         this.code = code;
         this.documentNumber = documentNumber;
@@ -19,7 +19,7 @@ public class Person {
 
     }
 
-    public Person() {
+    protected Person() {
 
     }
 
