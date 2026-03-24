@@ -29,7 +29,7 @@ private Long getStudentId(){return studentId;}
     @Override
     public String toString() {
         return "Student{" +
-                "studentId=" + studentId + '\'' +
+                "studentId=" + getStudentId() + '\'' +
                 "birthDate='" + getBirthDate() + '\n' +
                 "userId=" + getUserId() +
                 "code='" + getCode() + '\n' +

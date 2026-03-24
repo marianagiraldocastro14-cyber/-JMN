@@ -8,11 +8,14 @@ import co.edu.cesde.ga.model.Student;
 import java.util.List;
 
     public interface StudentRepository {
+
         Student create(Student student);
 
         List<Student> findAlL();
 
         Student findByid(Long studentId);
+
+        boolean existByDocumentNumber(String documentNumber);
 
         Student findByDocumentNumber(String documentNumber);
 
@@ -21,6 +24,10 @@ import java.util.List;
         boolean delete(Long studentId);
 
         boolean existsBydocumentNumber(String documentNumber);
+
+        int count();
+
+        List<Student> findAll();
     }
 
 
