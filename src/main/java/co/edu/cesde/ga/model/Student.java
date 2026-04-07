@@ -5,7 +5,7 @@ public class Student extends Person {
     private Long studentId;
     private String birthDate;
 
-    public Student(){super();}
+    public Student(Long studentId, String birthDate, String s001, String number, String id, String mariana, String giraldo, String activo){super();}
 
     public Student(Long studentId, String birthDate, Long userId, String code, String documentNumber, String firstName, String lastName, String status) {
         super(userId, code, documentNumber, firstName, lastName, status);
